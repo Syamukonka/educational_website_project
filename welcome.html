@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EduCo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo" style="position:absolute;"><big>EduCo&#8482</big></div>
+        <center>
+            <div>
+                <a href="services.html">
+                    <div class="menu"> Services</div>
+                </a>
+                <a href="team.html">
+                    <div class="menu"> Team </div>
+                </a>
+                <a href="aboutus.html">
+                    <div class="menu"> About us </div>
+                </a>
+                <a href="contactus.html">
+                    <div class="menu"> Contact us </div>
+                </a>
+            </div><br>
+        </center>
+    </div>
+    <script>
+        function showform() {
+            document.getElementById("jnf").style.display = "block";
+            document.getElementById("jnf").style.position = "relative";
+            document.getElementById("jnf").style.boxShadow = "2px 2px 10px #333";
+            document.getElementById("jn").style.display = "none";
+        }
+
+        function closeform() {
+            document.getElementByClassName("jnf").style.display = "none";
+            document.getElementById("jn").style.display = "block";
+        }
+
+        function navble() {
+            alert("Sorry we are unable to process you request at this time, please try again another time. Thanks");
+        }
+    </script>
+    <div class="picture">
+        <p>Bringing the most brilliant ideas to one space.<br> Make the best of your studies from here and harness<br> the brighter side of your career</p>
+        <center>
+            <button id="jn" class="btn" onclick="showform()">Join now</button><br>
+
+            <form class="form" id="jnf">
+                <button class="close" onclick="closeform()">
+                    <p>close</p>
+                </button><br>
+                <input class="fields" type="text" placeholder="Enter your first name">
+                <input class="fields" type="text" placeholder="Enter your last name">
+                <input class="fields" type="email" placeholder="Enter your Email address">
+                <input class="fields" type="password" placeholder="Create a password">
+                <input class="fields" type="password" placeholder="Confirm password">
+                <button class="btn" onclick="navble()">Join now</button><br>
+                <font color=" white " face="calibri " size="4 ">
+                    <i style="color:rgb(0, 98, 255); " class="fa fa-facebook " aria-hidden="true "></i> Facebook sign in
+                    <br> <i style="color: tomato " class="fa fa-google " aria-hidden="true "></i> Google sign in
+                </font>
+            </form>
+            <font size="4 " color="white "> Already have an account?
+            </font><button id="si " class="btn " style="background-color: tomato; " onclick="navble() ">Sign in</button>
+        </center>
+    </div>
+
+
+    <div onclick="alert('Sign in to continue');">
+        <h1>Get Started with Computer Sceince
+            <hr>
+        </h1>
+
+        <div class="grid-container ">
+
+            <div class="grid-item ">
+                <img src="cpp.png ">
+
+            </div>
+            <div class="grid-item ">
+                <img src="vs.png ">
+            </div>
+            <div class="grid-item ">
+                <img src="blender.jpg ">
+            </div>
+            <div class="grid-item ">
+                <img src="html.png ">
+            </div>
+            <div class="grid-item ">
+                <img src="unreal.jpg ">
+            </div>
+            <div class="grid-item ">
+                <img src="Javascript.jpg ">
+            </div>
+            <div class="grid-item ">
+                <img src="css.png ">
+            </div>
+            <div class="grid-item ">
+                <img src="python.png ">
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <h1>Recent Works
+            <hr>
+        </h1>
+    </div>
+    <center>
+        <table>
+            <tr>
+                <td><b><big>Ranked best online Educational Website</big></b></td>
+                <td><b><big>Smart Devices Project</big></b></td>
+                <td><b><big>Recognision by World Organization</big></b></td>
+                <td><b><big>Certified students</big></b></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="rank.png ">
+                </td>
+                <td>
+                    <img src="iot.png ">
+                </td>
+                <td>
+                    <img src="certified.jpg ">
+                </td>
+                <td>
+                    <img src="graduated.jpg ">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>EduCo has spelt excellence better than anyone else, with more that 4.5 million satisfied subscribers, EduCo has mastered the art of delivering the best services</p>
+                </td>
+                <td>
+                    <p>EduCo has moved a mile further by launching Software for smart Devices, Join the team and start contributing to the world of technology</p>
+                </td>
+                <td>
+                    <p>EduCo is officially Approved by Government, worldwide Education Agencies and recruitment companies to offer online courses and certify students, join the community, start learning and get certifiactes</p>
+                </td>
+                <td>
+                    <p>EduCo has succefully certified over 4000 online students in the last 8 months, and over a hundred companies have recruited from EduCo</p>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <footer style="height: 50px; margin-bottom: 10px; border-radius: 3px; padding:4px;">
+        <marquee>
+            <p id="mqtext">Online Education free of cost</p>
+            <p id="mqtext">Start building your career</p>
+            <p id="mqtext">Join the world of technology</p>
+        </marquee>
+    </footer>
+
+    <footer>
+        <div>
+            <font face="calibri " size="5 ">Our mission is provide educational resources<br> worldwide for free </font>
+        </div>
+        <div class="footercolumn ">
+            <table>
+                <tr>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>Blogs</td>
+                </tr>
+                <tr>
+                    <td>Trainers</td>
+                </tr>
+                <tr>
+                    <td>Tutors</td>
+                </tr>
+                <tr>
+                    <td>Join the team</td>
+                </tr>
+                <tr>
+                    <td>Donate</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footercolumn ">
+            <table>
+                <caption>Connect with us</caption>
+                <tr>
+                    <td><i class="fa fa-facebook " aria-hidden="true "></i> Facebook</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-pinterest " aria-hidden="true "></i> Pinterest</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-twitter " aria-hidden="true "></i> Twitter</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-instagram " aria-hidden="true "></i> Instagram</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footercolumn ">
+            <table>
+                <tr>
+                    <td>Read our terms and conditions</td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+</html>

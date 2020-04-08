@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <title></title>
+
+    <style>
+        .nav {
+            background-color: #333;
+            height: 40px;
+            width: 100%;
+        }
+        
+        .navitem {
+            padding: 5px;
+            color: white;
+            font-family: monospace;
+            margin: 10px;
+            float: left;
+        }
+        
+        body {
+            font-family: Arial;
+            background-color: azure;
+        }
+        
+        table {
+            border-radius: 4px;
+            background-color: rgb(2, 46, 49);
+            border-top: 3px solid tomato;
+            width: 500px;
+        }
+        
+        tr,
+        td {
+            color: white;
+            padding: 7px;
+            font-family: 'calibri';
+            margin: 4px;
+        }
+        
+        tr:hover td {
+            color: tomato;
+            background-color: rgb(5, 53, 56);
+            border-color: rgb(5, 53, 56);
+        }
+        
+        .navitem table {
+            margin-top: 10px;
+            display: none;
+            width: 100px;
+        }
+        
+        .navitem table:hover {
+            background-color: rgb(10, 46, 46);
+        }
+        
+        .navitem:hover table {
+            display: block;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navitem">list of items
+            <table>
+                <tr>
+                    <td>Laptops</td>
+                </tr>
+                <tr>
+                    <td>Phones</td>
+                </tr>
+                <tr>
+                    <td>Accesories</td>
+                </tr>
+            </table>
+        </div>
+        <div class="navitem">
+            Services
+        </div>
+        <div class="navitem">
+            Portfolio
+        </div>
+    </div>
+    <center>
+        <table>
+            <caption>Laptops for sale</caption>
+            <tr>
+                <td>HP envy</td>
+                <td>intel core i7</td>
+                <td>touch screen</td>
+                <marquee>
+                    <td>$345</td>
+                </marquee>
+            </tr>
+            <tr>
+                <td>Acer Aspire</td>
+                <td>intel core i5</td>
+                <td>touch screen</td>
+                <td>$285</td>
+            </tr>
+            <marquee>
+                <tr>
+                    <td>HP Eebook folio</td>
+                    <td>intel core i7</td>
+                    <td>360 flip</td>
+                    <td>$445</td>
+                </tr>
+                <script>
+                    for (var x = 1; x <= 5; x++) {
+                        document.write("<tr><td>Laptops are $" + 20 * x + "</td></tr>")
+                    }
+                </script>
+            </marquee>
+        </table>
+
+    </center>
+</body>
+
+</html>
